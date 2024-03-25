@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio website</title>
+        <link rel="stylesheet" href="style.css">  
+        <script src="https://kit.fontawesome.com/dbca0bbf87.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png " class="logo">
+                    <ul>
+                        <li><a href="#header" >Home</a></li>
+                        <li><a href="#about" >About</a></li>
+                        <li><a href="#services" >Services</a></li>
+                        <li><a href="#portfolio" >Portfolio</a></li>
+                        <li><a href="#contact" >Contact</a></li>
+                        <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi,I'm <span>Kevin</span> <br> Jen From Australia. </h1>
+                </div>
+            </div>
+        </div>
+
+    <!-- ------about------     -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto aliquid ea nesciunt ipsum quibusdam et labore reiciendis maxime laborum in numquam exercitationem ullam dolore impedit velit eos a architecto facilis at veniam? Laborum debitis officia, ab odio neque deserunt labore praesentium? Libero sequi ducimus aut necessitatibus fugit architecto eaque. Natus delectus debitis soluta minima consequatur ut totam reprehenderit, qui, iusto quaerat rem facilis dolorem eos libero unde dicta molestias!.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                                <li><span>Web Development </span><br>Web app development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-current</span><br>UO/UX Design Traning at ET Institue </li>
+                                <li><span>2019-2021</span><br>Team lead at startApp LLC.</li>
+                                <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design Training at ET Institute.</li>
+                                <li><span>2016 </span><br>MBA from MIT Banglore .</li>
+                                <li><span>2014</span><br>BBA from ISM Banglore. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------services------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> My Services</h1>
+                <div class="services-list">
+                    <div > 
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto, tempora distinctio magnam deserunt doloremque!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div >
+                        <i class="fa-solid fa-crop"></i> 
+                        <h2>UI/UX  Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto, tempora distinctio magnam deserunt doloremque!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div > 
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto, tempora distinctio magnam deserunt doloremque!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-------------------portfolio----------------->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you  to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class=" fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you  to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class=" fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping  App</h3>
+                        <p>The app connects you  to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class=" fas fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+       </div> 
+       <!--------contact------>
+       <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p ><i class=" fas fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p> <i class=" fas fa-sharp fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class=" fas fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://twitter.com"><i class=" fas fa-brands fa-x-twitter"></i></i></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://instagram.com"><i class=" fas fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name"  placeholder=" Your Name " required>
+                        <input type="text" name="email"  placeholder=" Your Email " required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <!-- <span id="msg"></span> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; MYportfolio 2024</p>
+        </div>
+       </div>
+    <!-- <script>
+   function opentab(tabname) {
+            var tablinks = document.querySelectorAll(".tab-links");
+            var tabcontents = document.querySelectorAll(".tab-contents");
+
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>  -->
+    <script src="script.js"></script>
+</body>
+</html>
